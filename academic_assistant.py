@@ -1,10 +1,10 @@
-from ibm_watson import AssistantV2
+from ibm_watson import AssistantV2  # use AssistantV2, not AssistantV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 # IBM Watson setup
 def setup_watson_assistant():
     authenticator = IAMAuthenticator('xuYxwXTjo0u-EofayBxP0Cub-Rmcn66fIlz-iqesKtpw')  # Replace with your API key
-    assistant = AssistantV3(
+    assistant = AssistantV2(  # Ensure using AssistantV2 here
         version='2021-06-14',
         authenticator=authenticator
     )
