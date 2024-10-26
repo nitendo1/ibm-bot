@@ -4,7 +4,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 # IBM Watson setup
 def setup_watson_assistant():
     authenticator = IAMAuthenticator('xuYxwXTjo0u-EofayBxP0Cub-Rmcn66fIlz-iqesKtpw')  # Replace with your API key
-    assistant = AssistantV2(
+    assistant = AssistantV3(
         version='2021-06-14',
         authenticator=authenticator
     )
